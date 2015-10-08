@@ -1,0 +1,178 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1180px;
+}
+
+.main-menu {
+    text-align: center;
+}
+
+.main-menu img {
+    width: 100%;
+    height: 300px;
+}
+
+.active1, .home {
+    font-weight: bold;
+    color: #19A319;
+}
+
+.active2, .about {
+    font-weight: bold;
+    color: #D63333;
+}
+
+.active3, .album {
+    font-weight: bold;
+    color: #A37519;
+}
+
+.image {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.image img {
+    height: 250px;
+    width: 30%;
+    opacity: 0.8;
+    transition: opacity 0.8s linear, width 2.5s, transform 0.8s, filter 2500ms;
+    filter: grayscale(1);
+}
+
+.image img:hover {
+    opacity: 1;
+    width: 39%;
+    animation:  nudge 1s linear 2 alternate, 
+        nudge2 0.6s linear 4 alternate, 
+        nudge3 0.4s linear 6 alternate, 
+        nudge4 0.1s linear 8 alternate;
+    filter: grayscale(0);
+}
+
+@keyframes nudge {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(8deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
+@keyframes nudge2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-6deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(6deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-6deg);
+    }
+}
+
+@keyframes nudge3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-4deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(4deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}
+
+@keyframes nudge4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-2deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(2deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    color: orange;
+}
+
+h2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.box {
+    margin-right: 5px;
+    width: 100%;
+}
+
+.box span {
+    color: red;
+}
+
+.info, .contact, .company {
+    width: 33.3333%;
+    border: 1px solid orange;
+    border-top: 5px solid orange;
+    float: left;
+    padding: 20px;
+}
